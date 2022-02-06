@@ -1,0 +1,20 @@
+dialog {
+	background-color: var(--background);
+	color: var(--primary);
+	border: none;
+	border-radius: 6px;
+	padding: 10px 30px;
+}
+
+dialog>header:first-child {
+	background-color: var(--tertiary);
+	border-radius: 6px 6px 0 0;
+	margin: -10px -30px 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+dialog::backdrop {
+	background: #0000009c;
+	backdrop-filter: blur(4px);
+}

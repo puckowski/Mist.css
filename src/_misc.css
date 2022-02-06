@@ -1,0 +1,113 @@
+button,
+input,
+textarea {
+	background-color: var(--tertiary);
+	color: var(--primary);
+	border-radius: 2px;
+	border: none;
+	padding: 8px;
+	transition: box-shadow var(--animation-duration) linear;
+}
+
+button,
+select,
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+input[type='checkbox'],
+input[type='range'],
+input[type='radio'] {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--secondary);
+}
+
+code,
+samp,
+time {
+	color: var(--code);
+	background-color: var(--tertiary);
+	display: inline-block;
+	padding: 2px 4px;
+	border-radius: 6px;
+}
+
+details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--tertiary);
+	padding: 10px 10px 0;
+	margin: 1em 0;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+details[open] {
+	padding: 10px;
+}
+
+details> :last-child {
+	margin-bottom: 0;
+}
+
+details[open] summary {
+	margin-bottom: 10px;
+}
+
+summary {
+	display: list-item;
+	background-color: var(--quaternary);
+	padding: 10px;
+	margin: -10px -10px 0;
+	cursor: pointer;
+	outline: none;
+}
+
+summary:hover,
+summary:focus {
+	text-decoration: underline;
+}
+
+details> :not(summary) {
+	margin-top: 0;
+}
+
+var {
+	color: var(--secondary);
+	font-style: normal;
+	font-family: monospace;
+}
+
+kbd {
+	background: var(--tertiary);
+	border: 1px solid var(--quaternary);
+	border-radius: 2px;
+	color: var(--secondary);
+	padding: 2px 4px 2px 4px;
+}
+
+fieldset {
+	border: 1px var(--secondary) solid;
+	border-radius: 6px;
+	margin: 0;
+	padding: 10px;
+}
+
+blockquote,
+q {
+	border-left: 1px solid var(--secondary);
+	padding: 4px 8px;
+}

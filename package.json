@@ -1,0 +1,24 @@
+{
+  "name": "Mist.css",
+  "version": "1.0.0",
+  "description": "Un-scoped dark-theme CSS for simple websites based on Water.css.",
+  "main": "mist.min.css",
+  "dependencies": {
+    "minify": "^8.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none",
+    "minify-windows": "if not exist dist mkdir dist && cd src && minify mist.css > ..\\dist\\mist.min.css",
+    "minify": "cd src && minify mist.css > ..\\dist\\mist.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Daniel Puckowski",
+  "license": "MIT"
+}
