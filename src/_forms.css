@@ -2,14 +2,14 @@ input:focus,
 select:focus,
 button:focus,
 textarea:focus {
-	box-shadow: 0 0 0 1px var(--accent);
+	box-shadow: 0 0 0 1px var(--primary500);
 }
 
 input:hover,
 select:hover,
 button:hover,
 textarea:hover {
-	box-shadow: 0 0 0 1px var(--accent);
+	box-shadow: 0 0 0 1px var(--primary500);
 }
 
 input:disabled,
@@ -22,7 +22,7 @@ textarea:disabled {
 
 input[type="checkbox"] {
 	appearance: none;
-	background-color: var(--quaternary);
+	background-color: var(--background700);
 	margin: 0;
 	font: inherit;
 	color: currentColor;
@@ -31,7 +31,7 @@ input[type="checkbox"] {
 	transform: translateY(-0.075em);
 	display: grid;
 	place-content: center;
-	border-color: var(--quaternary);
+	border-color: var(--background700);
 }
 
 input[type="checkbox"]::before {
@@ -42,7 +42,7 @@ input[type="checkbox"]::before {
 	transform: scale(0);
 	transform-origin: bottom left;
 	transition: 200ms transform ease-in-out;
-	box-shadow: inset 1em 1em var(--accent);
+	box-shadow: inset 1em 1em var(--primary500);
 	background-color: CanvasText;
 }
 
@@ -51,18 +51,18 @@ input[type="checkbox"]:checked::before {
 }
 
 input[type="checkbox"]:focus {
-	outline: 1px solid var(--accent);
+	outline: 1px solid var(--primary500);
 }
 
 input[type="radio"] {
 	appearance: none;
-	background-color: var(--quaternary);
+	background-color: var(--background700);
 	margin: 0;
 	font: inherit;
 	color: currentColor;
 	width: 1.15em;
 	height: 1.15em;
-	border-color: var(--quaternary);
+	border-color: var(--background700);
 	border-radius: 50%;
 	transform: translateY(-0.075em);
 	display: grid;
@@ -76,7 +76,7 @@ input[type="radio"]::before {
 	border-radius: 50%;
 	transform: scale(0);
 	transition: 200ms transform ease-in-out;
-	box-shadow: inset 1em 1em var(--accent);
+	box-shadow: inset 1em 1em var(--primary500);
 	background-color: CanvasText;
 }
 
@@ -85,13 +85,13 @@ input[type="radio"]:checked::before {
 }
 
 input[type="radio"]:focus {
-	outline: 1px solid var(--accent);
+	outline: 1px solid var(--primary500);
 }
 
 select {
-	background: var(--tertiary);
+	background: var(--background600);
 	padding-right: 35px;
-	color: var(--primary);
+	color: var(--foreground500);
 	padding: 4px 8px;
 }
 
@@ -106,9 +106,9 @@ select[multiple] {
 }
 
 select option {
-	background: var(--tertiary);
+	background: var(--background600);
 }
 
 ::placeholder {
-	color: var(--secondary);
+	color: var(--foreground600);
 }

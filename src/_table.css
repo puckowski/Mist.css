@@ -18,17 +18,17 @@ th {
 }
 
 thead {
-	border-bottom: 1px solid var(--secondary);
+	border-bottom: 1px solid var(--foreground600);
 }
 
 tfoot {
-	border-top: 1px solid var(--secondary);
+	border-top: 1px solid var(--foreground600);
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--tertiary);
+	background-color: var(--background600);
 }
 
 tbody tr:nth-child(even) button {
-	background-color: var(--quinary);
+	background-color: var(--background400);
 }
