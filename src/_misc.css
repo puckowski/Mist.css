@@ -7,6 +7,7 @@ textarea {
 	border: none;
 	padding: 8px;
 	transition: box-shadow var(--animation-duration) linear;
+	margin: 1px;
 }
 
 button,
