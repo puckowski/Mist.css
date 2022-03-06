@@ -29,7 +29,7 @@ input[type="checkbox"] {
 	width: 1.15em;
 	height: 1.15em;
 	transform: translateY(-0.075em);
-	display: grid;
+	display: inline-grid;
 	place-content: center;
 	border-color: var(--background700);
 }
@@ -65,7 +65,7 @@ input[type="radio"] {
 	border-color: var(--background700);
 	border-radius: 50%;
 	transform: translateY(-0.075em);
-	display: grid;
+	display: inline-grid;
 	place-content: center;
 }
 
