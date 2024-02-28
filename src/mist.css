@@ -5,14 +5,13 @@
 @import '_table.css';
 
 :root {	
-	--foreground500: #dbdbdb;
-	--foreground600: #a9b1ba;
-	--background400: #2e3e51;
-	--background500: #202b38;
-	--background600: #161f27;
-	--background700: #0f151a;
+	--foreground500: #161f27;
+	--foreground600: #0f151a;
+	--background500: #ffffff;
+	--background600: #e5e5e5;
+	--background700: #cccccc;
+	--background800: #b2b2b2;
 	--primary500: #41adff;
-	--secondary500: #ffbe85;
 	--animation-duration: 200ms;
 }
 

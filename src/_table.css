@@ -30,5 +30,5 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(even) button {
-	background-color: var(--background400);
+	background-color: var(--background800);
 }
