@@ -10,9 +10,9 @@
 	--foreground500: #161f27;
 	--foreground600: #0f151b;
 	--background500: #ffffff;
-	--background550: #f5f5fa;
-	--background600: #e5e5e5;
-	--background700: #cccccc;
+	--background550: #f0f0ff;
+	--background600: #e0e0e0;
+	--background700: #c7c7c7;
 	--primary500: #41adff;
 	--animation-duration: 200ms;
 }
