@@ -26,9 +26,5 @@ tfoot {
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--background600);
-}
-
-tbody tr:nth-child(even) button {
-	background-color: var(--background800);
+	background-color: var(--background550);
 }

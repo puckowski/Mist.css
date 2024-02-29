@@ -1,3 +1,7 @@
+input, select, textarea {
+	width: 100%;
+}
+
 input:focus,
 select:focus,
 button:focus,
@@ -12,12 +16,20 @@ textarea:hover {
 	box-shadow: 0 0 0 1px var(--primary500);
 }
 
+input[readonly],
+select[readonly],
+button[readonly],
+textarea[readonly] {
+	cursor: pointer;
+	filter: brightness(80%);
+}
+
 input:disabled,
 select:disabled,
 button:disabled,
 textarea:disabled {
 	cursor: not-allowed;
-	opacity: 0.5;
+	filter: brightness(80%);
 }
 
 input[type="checkbox"] {
@@ -111,4 +123,46 @@ select option {
 
 ::placeholder {
 	color: var(--foreground600);
+}
+
+[type=checkbox][role=switch] {
+	width: 2.475em;
+	height: 1.25em;
+	border-radius: 1.25em;
+	background: linear-gradient(to right, var(--background600) 50%, var(--background700) 50%);
+	line-height: 1.25em;
+	padding-left: 1.475em;
+}
+
+
+[type=checkbox][role=switch]:checked {
+	background-image: none;
+	background: linear-gradient(to right, var(--background600) 50%, var(--background700) 50%);
+	padding-left: 1.475em;
+}
+
+input[type=color] {
+	height: 3.25em;
+	padding: 4px;
+	vertical-align: middle;
+}
+
+[type=file] {
+	border: 0;
+	border-radius: 0;
+	background: 0 0;
+}
+
+[type=file]:hover {
+	box-shadow: none;
+}
+
+input[type=file]::file-selector-button {
+	background-color: var(--background600);
+	border: none;
+	padding: 8px;
+}
+
+input[type=file]::file-selector-button:hover {
+	box-shadow: 0 0 0 1px var(--primary500);
 }

@@ -1,0 +1,45 @@
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::before,
+[data-tooltip]::after {
+    display: block;
+    z-index: 99;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    padding: 0.25rem 0.5rem;
+    overflow: hidden;
+    transform: translate(-50%, -0.25rem);
+    border-radius: 6px;
+    background: var(--background600);
+    content: attr(data-tooltip);
+    color: var(--foreground500);
+    font-style: normal;
+    font-size: 0.875rem;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+[data-tooltip]::after {
+    padding: 0;
+    transform: translate(-50%, 0rem);
+    border-top: 0.3rem solid;
+    border-right: 0.3rem solid transparent;
+    border-left: 0.3rem solid transparent;
+    border-radius: 0;
+    background-color: transparent;
+    content: "";
+    color: var(--forground600);
+}
+
+[data-tooltip]:focus::before,
+[data-tooltip]:focus::after,
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+    opacity: 1;
+}
