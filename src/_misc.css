@@ -38,7 +38,7 @@ hr {
 code,
 samp,
 time {
-	color: var(--primary500);
+	color: var(--primary600);
 	background-color: var(--background600);
 	display: inline-block;
 	padding: 2px 4px;
@@ -108,5 +108,5 @@ q {
 }
 
 mark {
-	background-color: var(--primary500);
+	background-color: var(--secondary500);
 }

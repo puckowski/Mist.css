@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "none",
-    "minify-windows": "if not exist dist mkdir dist && cd src && minify mist.css > ..\\dist\\mist.min.css",
+    "minify-windows": "cd src && minify .\\mist.css > ..\\dist\\mist.min.css",
     "minify": "cd src && minify mist.css > ..\\dist\\mist.min.css"
   },
   "repository": {
