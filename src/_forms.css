@@ -131,14 +131,14 @@ select option {
 	border-radius: 1.25em;
 	background: linear-gradient(to right, var(--background600) 50%, var(--background700) 50%);
 	line-height: 1.25em;
-	padding-left: 1.475em;
+	padding-left: 1.6em;
 }
 
 
 [type=checkbox][role=switch]:checked {
 	background-image: none;
 	background: linear-gradient(to right, var(--background600) 50%, var(--background700) 50%);
-	padding-left: 1.475em;
+	padding-left: 1.6em;
 }
 
 input[type=color] {
